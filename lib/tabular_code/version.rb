@@ -1,3 +1,3 @@
-module CharCode
+module TabularCode
   VERSION = "0.0.1"
 end

@@ -1,6 +1,6 @@
-require "char_code/base"
+require "tabular_code/base"
 
-module CharCode
+module TabularCode
   module Quwei
     extend Base
 

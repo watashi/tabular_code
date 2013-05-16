@@ -1,4 +1,4 @@
-module CharCode
+module TabularCode
   class Error < RuntimeError
   end
 

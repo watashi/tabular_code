@@ -1,4 +1,4 @@
-# CharCode
+# TabularCode
 
 Convertion for tabular codes like
 Chinese [quwei](http://zh.wikipedia.org/wiki/%E5%8C%BA%E4%BD%8D%E7%A0%81_%28%E5%9B%BD%E6%A0%87%29)
@@ -9,7 +9,7 @@ Japanese [kuten](http://ja.wikipedia.org/wiki/JIS_X_0208).
 
 Add this line to your application's Gemfile:
 
-    gem 'char_code'
+    gem 'tabular_code'
 
 And then execute:
 
@@ -17,13 +17,13 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install char_code
+    $ gem install tabular_code
 
 ## Usage
 
 Example program:
 
-    require 'char_code'
+    require 'tabular_code'
 
     puts Quwei.from_char('搞')
     puts Quwei.to_char(2467)
