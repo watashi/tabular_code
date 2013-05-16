@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = CharCode::VERSION
   gem.authors       = ["Zejun Wu"]
   gem.email         = ["zejun.wu@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Convertion for tabular codes like Chinese quwei and Japanese kuten}
+  gem.summary       = %q{Convertion for tabular codes like quwei and kuten}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)

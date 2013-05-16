@@ -1,6 +1,9 @@
 # CharCode
 
-TODO: Write a gem description
+Convertion for tabular codes like
+Chinese [quwei](http://zh.wikipedia.org/wiki/%E5%8C%BA%E4%BD%8D%E7%A0%81_%28%E5%9B%BD%E6%A0%87%29)
+and
+Japanese [kuten](http://ja.wikipedia.org/wiki/JIS_X_0208).
 
 ## Installation
 
@@ -18,7 +21,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Example program:
+
+    require 'char_code'
+
+    puts Quwei.from_char('搞')
+    puts Quwei.to_char(2467)
+    p '我爱你！'.quwei
+    p Quwei.to_str([4444] * 44)
+
+Example output:
+
+    2467
+    搞
+    [4650, 1614, 3667, 301]
+    "烫烫烫烫"
+
+See rdoc and rspec tests for more details.
 
 ## Contributing
 
