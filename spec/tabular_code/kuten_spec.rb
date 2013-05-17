@@ -16,7 +16,7 @@ tests = {
 
 describe TabularCode::Kuten do
   describe '.from_char' do
-    it 'converts valid character to corresponding quwei code' do
+    it 'converts valid character to corresponding kuten code' do
       tests.each do |i, j|
         TabularCode::Kuten.from_char(i).should == j
       end
@@ -30,13 +30,13 @@ describe TabularCode::Kuten do
   end
 
   describe '.to_char' do
-    it 'converts valid quwei code to corresponding character' do
+    it 'converts valid kuten code to corresponding character' do
       tests.each do |i, j|
         TabularCode::Kuten.to_char(j).should == i
       end
     end
 
-    it 'converts invalid quwei code to nil' do
+    it 'converts invalid kuten code to nil' do
       [-1, 32, 1234, 3600, 9999].each do |i|
         TabularCode::Kuten.to_char(i).should be_nil
       end
