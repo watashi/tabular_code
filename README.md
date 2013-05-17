@@ -7,10 +7,11 @@ Japanese [kuten](http://ja.wikipedia.org/wiki/JIS_X_0208).
 
 Supported row-cell notations:
 
-| Module | Language | National standard | Alternative name |
-| Quwei | Simplified Chinese | GB 2312-80 | Quwei 区位 |
-| Kuten | Japanese | JIS X 0208:1997 | Kuten 区点 |
-| KSX1001 | Korean | KS X 1001:1992 | |
+| Module  | Language           | National standard | Alternative name |
+|---------|--------------------|-------------------|------------------|
+| Quwei   | Simplified Chinese | GB 2312-80        | Quwei 区位       |
+| Kuten   | Japanese           | JIS X 0208:1997   | Kuten 区点       |
+| KSX1001 | Korean             | KS X 1001:1992    |                  |
 
 ## Installation
 
