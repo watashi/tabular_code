@@ -7,7 +7,7 @@ module TabularCode
 
   module Base
     def from_char(c)
-      c = c.encode(@@encoding).ord rescue (return nil)
+      c = c.encode(@encoding).ord rescue (return nil)
       x = c / 0x100 - 0xA0
       y = c % 0x100 - 0xA0
       valid?(x, y) ? x * 100 + y : nil
@@ -17,7 +17,7 @@ module TabularCode
       x = c / 100
       y = c % 100
       c = valid?(x, y) ? (0xA0 + x) * 0x100 + (0xA0 + y) : nil
-      c.chr(@@encoding).encode(Encoding::UTF_8) rescue (return nil)
+      c.chr(@encoding).encode(Encoding::UTF_8) rescue (return nil)
     end
 
     def from_str(s, options = {:replace => nil})
@@ -34,7 +34,7 @@ module TabularCode
 
     protected
     def encoding=(encoding)
-      @@encoding = encoding
+      @encoding = encoding
     end
 
     private

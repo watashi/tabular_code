@@ -2,7 +2,7 @@
 
 require 'tabular_code/quwei'
 
-CHAR_CODE = {
+tests = {
   '我' => 4650,
   '爱' => 1614,
   '你' => 3667,
@@ -13,10 +13,11 @@ CHAR_CODE = {
   '。' => 103
 }
 
+
 describe TabularCode::Quwei do
   describe '.from_char' do
     it 'converts valid character to corresponding quwei code' do
-      CHAR_CODE.each do |i, j|
+      tests.each do |i, j|
         TabularCode::Quwei.from_char(i).should == j
       end
     end
@@ -30,7 +31,7 @@ describe TabularCode::Quwei do
 
   describe '.to_char' do
     it 'converts valid quwei code to corresponding character' do
-      CHAR_CODE.each do |i, j|
+      tests.each do |i, j|
         TabularCode::Quwei.to_char(j).should == i
       end
     end
