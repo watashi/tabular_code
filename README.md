@@ -33,7 +33,7 @@ Example program:
 
     require 'tabular_code'
 
-    puts Quwei.to_str([4444] * 44)
+    puts Quwei.to_str([4444] * 4)
     [Quwei, Kuten, KSX1001].each do |i|
       p [i.from_char('一'), i.to_char(5050)]
     end
