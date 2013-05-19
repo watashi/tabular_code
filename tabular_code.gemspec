@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["zejun.wu@gmail.com"]
   gem.description   = %q{Convertion for tabular codes like Chinese quwei and Japanese kuten}
   gem.summary       = %q{Convertion for tabular codes like quwei and kuten}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/watashi/tabular_code"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
