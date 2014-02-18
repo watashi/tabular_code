@@ -1,4 +1,4 @@
-# TabularCode
+# TabularCode [![Build Status](https://api.travis-ci.org/watashi/tabular_code.png?branch=master)](https://travis-ci.org/watashi/tabular_code)
 
 Convertion for tabular codes like
 Chinese [quwei](http://zh.wikipedia.org/wiki/%E5%8C%BA%E4%BD%8D%E7%A0%81_%28%E5%9B%BD%E6%A0%87%29)
